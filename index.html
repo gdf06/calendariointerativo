@@ -6,12 +6,13 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    
 </head>
 <body>
     <h1>Calendário Interativo</h1>
+    <h2>Abril- 2025</h2>
 
-    <table>
+    <table class="calendar" id="calendar">
         <tr>
             <th>DOM</th>
             <th>SEG</th>
@@ -64,11 +65,21 @@
             <td>28</td>
             <td>29</td>
             <td>30</td>
-            <td>31</td>
             <td></td>
             <td></td>  
         </tr>
     </table>
-    
+    <hr />
+    <label for="">Escolha uma cor:</label>
+    <select id="color>"
+        <option value="LightBlue">Azul Claro</option>
+        <option value="PaleGreen">Verde</option>
+        <option value="LightPink">Rosa</option>
+        <option value="SlateBlue">Roxo</option>     
+    </select>
+    <label for="">Escolha um dia:</label>
+    <input type="number" min="1" max="30"
+    id="day">
+    <script src='main.js'></script>
 </body>
 </html>
